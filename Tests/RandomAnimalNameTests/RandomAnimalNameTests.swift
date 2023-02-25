@@ -7,5 +7,6 @@ final class RandomAnimalNameTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
         XCTAssertNotEqual(randomAnimalName(), "Happy Humunculous")
+        XCTAssertNotEqual(randomAnimalName(), " ")
     }
 }

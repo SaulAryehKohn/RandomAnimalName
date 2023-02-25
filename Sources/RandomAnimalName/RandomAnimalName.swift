@@ -16,7 +16,7 @@ private func findCommonLetters(lettersA: [String], lettersB: [String]) -> [Strin
 }
 
 private func loadJson(filename fileName: String) -> [String]? {
-    if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+    if let url = Bundle.module.url(forResource: fileName, withExtension: "json") {
         do {
             let data = try Data(contentsOf: url)
             let jsonData = try JSONDecoder().decode([String].self, from: data)
