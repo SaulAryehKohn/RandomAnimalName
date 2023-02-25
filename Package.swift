@@ -25,8 +25,8 @@ let package = Package(
             name: "RandomAnimalName",
             dependencies: [],
             resources: [
-                .copy("adjectives.json"),
-                .copy("animals.json")
+                .copy("Resources/adjectives.json"),
+                .copy("Resources/animals.json")
             ]
         ),
         .testTarget(
