@@ -42,7 +42,7 @@ private func randomAnimal(startLetter: Character) -> String {
     return choice.split(separator: " ").joined(separator: "-")
 }
 
-func randomAnimalName() -> String{
+public func randomAnimalName() -> String{
     let letter = possibleLetters.randomElement() ?? "h"
     let adjective = randomAdjective(startLetter: Character(letter))
     let animal = randomAnimal(startLetter: Character(letter))
